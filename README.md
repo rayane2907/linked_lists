@@ -1,73 +1,75 @@
-# linked_lsts
-        class Tree:
-        class _Node:
-          __slots__:'_left','right','parent','data'
-          def __int__(self,left,right,parent,data):
-            self._left=left
-            self._right=right
-            self._parent=parent
-            self._data=data
-        class _position:
-          def __init__(self,container,node):
-            self._cotainer=cotainer
-            self._node=node
-          def _element(self):
-            return self._node._data
-          def _validate (self,p):
-            if not isintance(p, self_position):
-              raise TypeError ('p should be a valid position')
-            if p_container is not self:
-              raise ValueError ('p should be created for this tree')
-            if p._node._parent is p._node:
-              raise ValueError ('p is no longer valid position')
-            return p._node
-          def _make_position (self, node):
-            if node is not None:
-               return self._position
-            else None 
-          def __init__(self):
-            self._root= none
-            self._size = 0
-          def __len__(self):
-            return self._size
-          def root(self):
-            return self._make_position(self.root)
-          def parent(self,p):
-            node = self._validate(p)
-            return self._make_position(node.parent)
-          def left(self,p):
-            node = self._validate(p)
-            return self._make_position(node.left)
-         def right(self,p):
-          node= self._validate(p)
-          return self._make_position(node.right)
-         def _nbr_children(self,p):
-           count=0
-           if self.left is not None
-             counter+=1
-             return counter
-         def add_root(self,e):
-           if self.root is not None:
-             raise ValueError ('root exists')
-             self._size=1
-             self._root=self._node(data=e)
-           return self._make_position(self._root)
-         def add_left(self, p, e):
-           node=self._validate(p)
-           if node.left is not None:
-             raise ValueError ('left child exists')
-           node.left=selft._node(e, node)
-           selff._size+=1
-           return self._make_position(self._left)
-         def add_left(self, p, e):
-           node=left._validate(p)
-           if node.right is not None:
-             raise ValueError ('right child exists')
-           node.right=selft._node(e, node)
-           selff._size+=1
-           return self._make_position(self._right)
-         def _replace(self,p,e):
-           node=self._validate(p)
-           old=node._element
-           node._element=e
-           return old
+# Linked Lists Tutorial
+
+Welcome to the Linked Lists Tutorial! This tutorial aims to provide a comprehensive guide to understanding and implementing linked lists in various programming languages. Whether you are a beginner or an experienced developer looking to brush up on your knowledge, this tutorial will cover the essential concepts and provide practical examples.
+
+## Table of Contents
+
+1. [Introduction to Linked Lists](#introduction-to-linked-lists)
+2. [Types of Linked Lists](#types-of-linked-lists)
+   - [Singly Linked List](#singly-linked-list)
+   - [Doubly Linked List](#doubly-linked-list)
+   - [Circular Linked List](#circular-linked-list)
+3. [Basic Operations](#basic-operations)
+   - [Insertion](#insertion)
+   - [Deletion](#deletion)
+   - [Traversal](#traversal)
+4. [Advanced Operations](#advanced-operations)
+   - [Reversing a Linked List](#reversing-a-linked-list)
+   - [Detecting a Loop](#detecting-a-loop)
+   - [Merging Two Linked Lists](#merging-two-linked-lists)
+5. [Practical Examples](#practical-examples)
+6. [Conclusion](#conclusion)
+
+## Introduction to Linked Lists
+
+A linked list is a linear data structure where elements are stored in nodes. Each node contains a reference (or link) to the next node in the sequence. Unlike arrays, linked lists do not require contiguous memory locations, allowing for dynamic memory allocation and efficient insertion and deletion operations.
+
+## Types of Linked Lists
+
+### Singly Linked List
+
+A singly linked list is the simplest type of linked list, where each node points to the next node in the sequence. The last node points to `null`, indicating the end of the list.
+
+### Doubly Linked List
+
+A doubly linked list is a type of linked list where each node has two links: one to the next node and another to the previous node. This allows for traversal in both directions.
+
+### Circular Linked List
+
+In a circular linked list, the last node points back to the first node, forming a circular structure. This can be implemented in both singly and doubly linked lists.
+
+## Basic Operations
+
+### Insertion
+
+Insertion in a linked list can be performed at the beginning, end, or any position within the list. Each type of linked list has its own implementation details for insertion.
+
+### Deletion
+
+Deletion involves removing a node from the linked list. Similar to insertion, deletion can occur at the beginning, end, or any position within the list.
+
+### Traversal
+
+Traversal is the process of visiting each node in the linked list to perform an operation (e.g., printing the node's data). Traversal can be done iteratively or recursively.
+
+## Advanced Operations
+
+### Reversing a Linked List
+
+Reversing a linked list involves changing the direction of the links, so that the first node becomes the last, and the last node becomes the first.
+
+### Detecting a Loop
+
+Detecting a loop in a linked list involves identifying whether there is a cycle in the sequence of nodes. This can be done using algorithms such as Floyd's Cycle-Finding Algorithm.
+
+### Merging Two Linked Lists
+
+Merging two linked lists involves combining the nodes of two lists into a single list while maintaining the order of the nodes.
+
+## Practical Examples
+
+This section will provide practical examples and code snippets for implementing linked lists and their operations in various programming languages.
+
+## Conclusion
+
+Linked lists are a fundamental data structure with a wide range of applications. Understanding linked lists and their operations is essential for any programmer. We hope this tutorial provides a solid foundation for your learning journey.
